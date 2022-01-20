@@ -31,7 +31,7 @@ public class AdministrativeService
         return administrativeRepository.findById(id).get();
     }
 
-    public void createAdministrative(CreateAdministrativeForm createAdministrativeForm)
+    public void createOrUpdateAdministrative(CreateAdministrativeForm createAdministrativeForm)
     {
         AdministrativeEntity administrativeEntity;
         if (createAdministrativeForm.getId() == null) {

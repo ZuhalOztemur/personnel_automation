@@ -19,8 +19,8 @@ public class AdministrativeController
 
 
     @PostMapping(value = "/create")
-    private String crateOrUpdateAdministrative(@ModelAttribute CreateAdministrativeForm createAdministrativeForm){
-        administrativeService.createAdministrative(createAdministrativeForm);
+    private String createOrUpdateAdministrative(@ModelAttribute CreateAdministrativeForm createAdministrativeForm){
+        administrativeService.createOrUpdateAdministrative(createAdministrativeForm);
         return "redirect:/admin/get-admin-administrative";
     }
 
@@ -31,7 +31,7 @@ public class AdministrativeController
     }
 
     @GetMapping(value = "/{administrativeId}")
-    private String getAdministrativeById(@PathVariable("administrativeById") Long administrativeId, Model model){
+    private String getAdministrativeById(@PathVariable("administrativeId") Long administrativeId, Model model){
 
         AdministrativeEntity administrativeEntity = administrativeService.getAdministrativeById(administrativeId);
 
