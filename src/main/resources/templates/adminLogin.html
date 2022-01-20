@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" >
+<head>
+    <meta charset="UTF-8">
+    <style>
+       @import url(//fonts.googleapis.com/css?family=Lato:100,300,300i,400);
+
+       body {
+           background-image: url("https://images.unsplash.com/photo-1493723843671-1d655e66ac1c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWRtaW4lMjBsb2dpbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60");
+           box-sizing: border-box;
+           font-family: Lato, Arial;
+           text-align: center;
+           color: #eee;
+           background-color: #5f4dee;
+           background-size: cover;
+
+       }
+
+       h2 {
+           margin-top: 1em;
+           margin-bottom: 1em;
+           color: black;
+           font-weight: 400;
+           font-size: 200%;
+           letter-spacing: 4px;
+           margin-left: -480px;
+
+       }
+
+       h4 {
+           margin-top: 1em;
+           color: black;
+           font-size: 150%;
+           font-weight: 300;
+           text-align: center;
+       }
+
+       button {
+           display: inline;
+           background: #b0c4de;
+           color: #b0c4de;
+           border: 0;
+           padding: 4px;
+       }
+
+       input {
+           display: block;
+           width: 98%;
+           height: 30px;
+           margin-top: 1.0em;
+           padding: 4px;
+           border-radius: 5px;
+           border-color: 	#b0c4de;
+
+       }
+
+       small {
+           display: inline-block;
+           margin-top: 5px;
+           color: white;
+           font-size: 100%;
+           color: #fff;
+       }
+
+       .login-box {
+           background: transparent;
+           padding: 1em 1em 1em 1em;
+           margin: auto;
+           text-align: center;
+           display: block;
+
+           /*border: 1px dashed white;*/
+           width: 60%;
+           height: auto;
+       }
+
+       .outer-box {
+           display: block;
+           margin: auto;
+           background: #fff0f5;
+           border-radius: 25px;
+           width: 60%;
+           height: 20em;
+           height: auto;
+           margin-left: 80px;
+           height: 400px;
+       }
+
+       .btn-login {
+           display: block;
+           width: 100%;
+           height: 40px;
+           margin-top: 2.0em;
+           border-radius: 4px;
+           background-color:	#d2b48c;
+           color: #fff;
+       }
+       </style>
+</head>
+<body>
+<h2>Admin Paneli</h2>
+<div class="outer-box">
+    <div class="login-box">
+        <h4 class="login-text">Giriş</h4>
+        <form action="#" th:action="@{/admin/login}" th:object="${loginForm}" method="post">
+            <input type="text" th:field="*{userName}" placeholder="Kullanıcı Adı">
+            <input type="password" th:field="*{password}" placeholder="Şifre">
+            <button  type="submit" class="btn-login">Giriş Yap</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
