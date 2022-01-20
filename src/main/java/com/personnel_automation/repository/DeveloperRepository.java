@@ -1,6 +1,6 @@
-package com.school_automation.repository;
+package com.personnel_automation.repository;
 
-import com.school_automation.entity.DeveloperEntity;
+import com.personnel_automation.entity.DeveloperEntity;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

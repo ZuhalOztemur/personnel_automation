@@ -1,4 +1,4 @@
-package com.school_automation.form;
+package com.personnel_automation.form;
 
 public class CreateManagerForm {
     private String userName;

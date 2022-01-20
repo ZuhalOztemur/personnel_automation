@@ -1,6 +1,6 @@
-package com.school_automation.entity;
+package com.personnel_automation.entity;
 
-import com.school_automation.dto.ManagerDTO;
+import com.personnel_automation.dto.ManagerDTO;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;

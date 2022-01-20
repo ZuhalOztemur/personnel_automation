@@ -1,8 +1,8 @@
-package com.school_automation.controller;
+package com.personnel_automation.controller;
 
-import com.school_automation.entity.AdministrativeEntity;
-import com.school_automation.form.LoginForm;
-import com.school_automation.repository.AdministrativeRepository;
+import com.personnel_automation.entity.AdministrativeEntity;
+import com.personnel_automation.form.LoginForm;
+import com.personnel_automation.repository.AdministrativeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

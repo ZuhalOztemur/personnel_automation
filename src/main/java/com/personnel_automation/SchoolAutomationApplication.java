@@ -1,4 +1,4 @@
-package com.school_automation;
+package com.personnel_automation;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

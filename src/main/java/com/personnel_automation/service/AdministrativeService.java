@@ -1,8 +1,8 @@
-package com.school_automation.service;
+package com.personnel_automation.service;
 
-import com.school_automation.form.CreateAdministrativeForm;
-import com.school_automation.entity.AdministrativeEntity;
-import com.school_automation.repository.AdministrativeRepository;
+import com.personnel_automation.form.CreateAdministrativeForm;
+import com.personnel_automation.entity.AdministrativeEntity;
+import com.personnel_automation.repository.AdministrativeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

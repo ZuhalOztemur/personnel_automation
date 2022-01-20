@@ -1,4 +1,4 @@
-package com.school_automation.entity;
+package com.personnel_automation.entity;
 
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;

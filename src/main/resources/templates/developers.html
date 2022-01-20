@@ -13,14 +13,14 @@
             padding: 0;
         }
         html {
-            background-color: #5f4dee;
+            background-color: black;
         }
         a {
             text-decoration: none;
             color: black;
         }
         header {
-            background-color: #5f4dee;
+            background-color: black;
             width: 100%;
             display: inline-block;
         }
@@ -59,6 +59,8 @@
             padding: 30px 15px;
             min-height: 770px;
             background-color: white;
+            background-image: url("https://image.freepik.com/free-photo/group-diverse-people-having-business-meeting_53876-25060.jpg");
+            background-size: cover;
         }
         h1 {
             text-align: center;
@@ -107,12 +109,44 @@
             border: 1px;
             width: 400px;
         }
+        #personel{
+            width: 100%;
+            font: bold 1.25em "Trebuchet MS", Verdana, Arial, Helvetica,
+            sans-serif;
+            border: 20px solid #505050;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-align: left;
+            padding: 6px 6px 6px 12px;
+            background: #C1DAD7;
+            border-collapse: collapse;
+        }
+
+        #personel th{
+            color: red;
+            padding: 6px 6px 6px 12px;
+
+        }
+
+        #personel td{
+            padding: 6px 6px 6px 12px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+        }
+        #personel tr{
+            color: #112233;
+            background: #fff;
+        }
+        #personel tr:hover {
+            background: #202020;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
 <header>
     <div class="kutu">
-        <a class="logo">Okul Yönetim Sistemi</a>
+        <a class="logo">Personel Yönetim Sistemi</a>
         <ul class="menu">
             <li class="mevcut">
                 <a th:href="@{'/administrative'}">İdari Birim Personelleri</a>
@@ -125,11 +159,11 @@
 </header>
 <main>
     <div class="kutu">
-        <h1>Personeller</h1>
-        <table border=1>
+        <h1>Yazılım Personelleri</h1>
+        <table id="personel">
             <tr>
                 <td>Adı Soyadı</td>
-                <td>Mesleği</td>
+                <td>Maaşı</td>
             </tr>
             <tr th:each="developer : ${developers}">
                 <td th:text="${developer.name}"></td>

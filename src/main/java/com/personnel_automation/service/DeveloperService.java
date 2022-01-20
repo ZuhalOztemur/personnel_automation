@@ -1,10 +1,9 @@
-package com.school_automation.service;
+package com.personnel_automation.service;
 
 
-import com.school_automation.entity.ManagerEntity;
-import com.school_automation.form.CreateDeveloperForm;
-import com.school_automation.entity.DeveloperEntity;
-import com.school_automation.repository.DeveloperRepository;
+import com.personnel_automation.form.CreateDeveloperForm;
+import com.personnel_automation.entity.DeveloperEntity;
+import com.personnel_automation.repository.DeveloperRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

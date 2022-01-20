@@ -11,21 +11,25 @@
             font-family: Arial;
             margin: 0;
             padding: 0;
+
         }
         html {
-            background-color: #5f4dee;
+            background-color: black;
+
         }
         a {
             text-decoration: none;
             color: black;
         }
         header {
-            background-color: #5f4dee;
+            background-color: black;
             width: 100%;
             display: inline-block;
+
         }
         .menu {
             float: right;
+
         }
         .menu li {
             display: inline-block;
@@ -44,6 +48,7 @@
             width: 100%;
             max-width: 1200px;
             margin: auto;
+
         }
         .logo {
             font-size: 24px;
@@ -59,6 +64,9 @@
             padding: 30px 15px;
             min-height: 770px;
             background-color: white;
+            background-image: url("https://image.freepik.com/free-photo/close-up-employee-with-crossed-arms_1098-3034.jpg");
+            background-size: cover;
+
         }
         h1 {
             text-align: center;
@@ -100,14 +108,47 @@
             margin: 6px;
         }
         footer .menu li a:hover {
-            background-color: #1d4657;
+            background-color: black;
             text-decoration: underline;
         }
         table{
-            border: 1px;
+            border: 10px;
             width: 400px;
+            border-color: black;
+            border-radius: 25px;
+        }
+        #personel{
+            width: 100%;
+            font: bold 1.25em "Trebuchet MS", Verdana, Arial, Helvetica,
+            sans-serif;
+            border: 20px solid #505050;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-align: left;
+            padding: 6px 6px 6px 12px;
+            background: #C1DAD7;
+            border-collapse: collapse;
         }
 
+        #personel th{
+            color: red;
+            padding: 6px 6px 6px 12px;
+
+        }
+
+        #personel td{
+            padding: 6px 6px 6px 12px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+        }
+        #personel tr{
+            color: #112233;
+            background: #fff;
+        }
+        #personel tr:hover {
+            background: #202020;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
@@ -116,21 +157,21 @@
         <a class="logo">Personel Yönetim Sistemi</a>
         <ul class="menu">
             <li class="mevcut">
-                <a th:href="@{'/administrative'}">İdari Birim</a>
+                <a th:href="@{'/administrative'}">İdari Birim Personelleri</a>
             </li>
             <li>
-                <a th:href="@{'/developer'}">Yazılım Personellerii</a>
+                <a th:href="@{'/developer'}">Yazılım Personelleri</a>
             </li>
         </ul>
     </div>
 </header>
 <main>
     <div class="kutu">
-        <h1>İdari Birim</h1>
-        <table border=1>
+        <h1>İdari Birim Personelleri</h1>
+        <table id="personel">
             <tr>
-                <td>Adı Soyadı</td>
-                <td>Departman</td>
+                <th>Ad Soyad</th>
+                <th>Departman</th>
             </tr>
             <tr th:each="administrative : ${administratives}">
                 <td th:text="${administrative.name}"></td>

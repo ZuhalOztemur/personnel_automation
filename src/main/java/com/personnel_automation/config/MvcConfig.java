@@ -1,4 +1,4 @@
-package com.school_automation.config;
+package com.personnel_automation.config;
 
 
 import org.springframework.beans.factory.annotation.Autowired;

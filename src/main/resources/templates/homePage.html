@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Sekme Başlığı</title>
+    <title>Personel Otomasyonu</title>
     <style>
         * {
             font-family: Arial;
@@ -10,14 +10,14 @@
             padding: 0;
         }
         html {
-            background-color: #5f4dee;
+            background-color: #696969;
         }
         a {
             text-decoration: none;
-            color: black;
+            color: white;
         }
         header {
-            background-color: #5f4dee;
+            background-color: #696969;
             width: 100%;
             display: inline-block;
         }
@@ -56,6 +56,8 @@
             padding: 30px 15px;
             min-height: 770px;
             background-color: white;
+            background-image: url("https://image.freepik.com/free-photo/business-partners-shaking-hands-monochrome_53876-104047.jpg");
+            background-size: cover;
         }
         h1 {
             text-align: center;
@@ -65,12 +67,15 @@
         }
         h2 {
             margin-top: 15px;
+            color: white;
         }
         h3 {
             margin-top: 15px;
+            color: white;
         }
         p {
             margin-top: 15px;
+            color: white;
         }
         .foto {
             float: left;
@@ -96,7 +101,7 @@
             margin: 6px;
         }
         footer .menu li a:hover {
-            background-color: #1d4657;
+            background-color: #696969;
             text-decoration: underline;
         }
         .copyright {
@@ -110,7 +115,7 @@
 <body>
 <header>
     <div class="kutu">
-        <a class="logo">Okul Yönetim Sistemi</a>
+        <a class="logo">Personel Yönetim Sistemi</a>
         <ul class="menu">
             <li class="mevcut">
                 <a th:href="@{'/administrative'}">İdari Birim Personelleri</a>
@@ -124,21 +129,25 @@
 <main>
     <div class="kutu">
         <h1></h1>
-        <img src="/jpg/student.jpg" class="foto" />
-        <h2>Nedir Okul Otomasyonu</h2>
-        <p>Okul Otomasyon Sistemi, okul içerisinde kullanılan bütün programları tek çatı altında toplayan, esnek ve işlevsel bir eğitim yazılımıdır. Kullanıcıları idareciler, öğretmenler, öğrenciler ve velilerdir. Muhasebeden, öğrenci işlerine; okul içi iletişimden ölçme-değerlendirmeye kadar tüm yazılımları tümleşik şekilde yönetmeyi sağlar.</p>
+        <img src="/jpg/calisan.jpeg" class="foto" />
+        <h2>Personel Otomasyonu Nedir</h2>
+<p>Personel takip programları yöneticiler, çalışanlar ve müşteriler arasında anlık sağlıklı bilgi akışı olmasını sağlayan, verileri tek elde toplayarak iş süreçlerini hızlı ve verimli hale getiren yönetim yazılımlarıdır.
+
+</p>
         <p>.</p>
         <p>.</p>
         <p>.</p>
         <p>.</p>
         <p>.</p>
-        <img src="/jpg/okulaile.jpg" class="foto" />
-        <h3>Okul Otomasyonu Yazılımı Kullanmak İçin 5 Neden</h3>
-        <p>1.Okul Yazılımı İdari İşleri Otomatikleştirir</p>
-        <p>2.Okul Yazılımları Eğitim Kurumlarının İletişimini Kurumsallaştırır</p>
-        <p>3.Eğitim Yazılımları Eğitimin Kalitesini Artırır</p>
-        <p>4.Okul Yönetim Yazılımı Velilere Anlık Bilgi Akışı Sağlar</p>
-        <p>5.Okul Yazılımları Eğitim Kurumlarına Sınavlar Konusunda Yenilikçi Çözümler Sunar</p>
+        <img src="/jpg/loginbackground.jpg" class="foto" />
+        <h3>Personel takip programı ile neler yapabilirsiniz?
+
+        </h3>
+        <p>1.Müşteri ve iş bilgisi kaydederek iş akışını takip edebilirsiniz
+        </p>
+        <p>2.Çalışanlarınıza dair maaş, avans, izin, çalışma saatleri ve benzeri bütün bilgileri kaydedip istediğiniz zaman istediğiniz ayrıntıda görüntüleyebilirsiniz</p>
+        <p>3.Yönetici olarak girip idari birime ve yazılım ekibine yeni personel ekleyebilirsiniz.</p>
+        </p>
     </div>
 </main>
 <footer>
@@ -148,14 +157,12 @@
                 <a href="#">Anasayfa</a>
             </li>
             <li>
-                <a href="#">Öğretmenler</a>
+                <a href="#">İdari Birim Personelleri</a>
             </li>
             <li>
-                <a href="#">Öğrenciler</a>
+                <a href="#">Yazılımcılar</a>
             </li>
-            <li>
-                <a href="#">Personeller</a>
-            </li>
+
         </ul>
         <p class="copyright">Tüm Hakları Saklıdır © Demo</p>
     </div>

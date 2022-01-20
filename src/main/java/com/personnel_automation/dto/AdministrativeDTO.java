@@ -1,4 +1,4 @@
-package com.school_automation.dto;
+package com.personnel_automation.dto;
 
 import lombok.Builder;
 import lombok.Data;
